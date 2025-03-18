@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #800080; /* Violet background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black; /* Changed font color to black */
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px; /* Designed for Android screen size */
+  height: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-form {
+  margin-bottom: 20px;
+}
+
+.intro-form input {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.arrow-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #4CAF50;
+}
+
+.details-table .row {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.details-table .row div {
+  font-size: 1rem;
+}
+
+#face-recognition {
+  margin-top: 20px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#attendance-list {
+  margin-top: 20px;
+}
+
+#attendance-record {
+  list-style: none;
+  padding: 0;
+}
+
+#attendance-record li {
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+#attendance-count {
+  margin-top: 20px;
+  font-size: 1rem;
+}

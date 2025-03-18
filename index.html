@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance System with Face Recognition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Intro Section -->
+    <div id="intro">
+      <h1>Intro: Attendance of Students</h1>
+      <div class="intro-form">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="rollNo" placeholder="Enter Roll No">
+        <input type="text" id="branch" placeholder="Enter Branch">
+      </div>
+      <button id="go-to-details" class="arrow-btn">&#8594;</button>
+    </div>
+
+    <!-- Details Section -->
+    <div id="details" style="display: none;">
+      <h1>Enter Details</h1>
+      <div class="details-table">
+        <div class="row">
+          <div>Name: <span id="detail-name"></span></div>
+        </div>
+        <div class="row">
+          <div>Roll No: <span id="detail-rollNo"></span></div>
+        </div>
+        <div class="row">
+          <div>Branch: <span id="detail-branch"></span></div>
+        </div>
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Face Recognition Section -->
+    <div id="face-recognition" style="display: none;">
+      <h1>Face Recognition</h1>
+      <video id="video" width="100%" height="auto" autoplay muted></video>
+      <button id="capture-btn">Capture Attendance</button>
+      <div id="attendance-list">
+        <h2>Attendance List:</h2>
+        <ul id="attendance-record"></ul>
+      </div>
+      <button id="done-btn" style="display: none;">Done</button>
+      <div id="attendance-count" style="display: none;">
+        <h3>Attendance Captured: <span id="count">0</span> Students</h3>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>
